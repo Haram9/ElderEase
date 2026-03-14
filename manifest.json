@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "ElderEase",
+  "version": "1.0.0",
+  "description": "Elder-friendly website assistant with Gemini chat, voice, text sizing, summaries, and research logs.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "<all_urls>",
+    "https://generativelanguage.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
