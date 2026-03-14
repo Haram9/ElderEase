@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>ElderEase Preview</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>body{min-height:1400px;padding:40px;font-family:Arial} .fake{max-width:700px;line-height:1.6}</style>
+</head>
+<body>
+  <div class="fake">
+    <h1>Mock Banking Portal</h1>
+    <p>Account overview and bill payments.</p>
+    <button>Check Balance</button>
+    <button>Pay Bills</button>
+  </div>
+  <aside id="elderEaseSidebar">
+    <div id="header"><span>ElderEase</span><button id="collapseBtn"></button></div>
+    <div class="subtitle">Your gentle guide for this website</div>
+    <div class="action-row"><button id="summarizeBtn" class="action-btn">Summarize</button><button id="explainBtn" class="action-btn">Explain</button></div>
+    <div class="action-row"><button id="linksBtn" class="action-btn">Important Links</button><button id="simplifyBtn" class="action-btn">Guide Me</button></div>
+    <div class="text-size-row"><button id="increaseTextBtn" class="text-size-btn">Bigger</button><button id="decreaseTextBtn" class="text-size-btn">Smaller</button></div>
+    <button id="exportLogsBtn">Export chat logs</button>
+    <div id="chatContainer">
+      <div class="message ai-message">Hi! I can summarize this page and guide you step-by-step.</div>
+      <div class="message user-message">How do I check my account balance?</div>
+      <div class="message ai-message"><strong>Steps:</strong><br>1. Click <strong>Check Balance</strong>.<br>2. Confirm with your OTP only on official bank pages.</div>
+    </div>
+    <div id="inputContainer"><input id="userInput" placeholder="Ask me what to click or do next..."><button id="voiceBtn">🎤</button><button id="sendBtn">➤</button></div>
+    <div id="status">Ready to help 🌼</div>
+  </aside>
+</body>
+</html>
